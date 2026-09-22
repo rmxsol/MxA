@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Angela 🌻💜</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================================
+         MUSIC
+    ========================================== -->
+
+    <audio id="music" preload="metadata" loop>
+        <source src="music/beautiful-things.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =========================================
+         LOGIN SCREEN
+    ========================================== -->
+
+    <div id="loginScreen" class="login-screen">
+
+        <div class="login-sunflower sunflower-one">🌻</div>
+        <div class="login-sunflower sunflower-two">🌻</div>
+        <div class="login-sunflower sunflower-three">🌻</div>
+
+        <div class="login-card">
+
+            <div class="login-flower">🌻</div>
+
+            <p class="small-label">
+                A LITTLE SOMETHING FOR
+            </p>
+
+            <h1>Angela</h1>
+
+            <p class="login-subtitle">
+                This little world was made<br>
+                especially for you. 💜
+            </p>
+
+            <div class="birthday-mini">
+                🎂 Happy 18th Birthday 🎂
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div id="passwordArea">
+
+                <label for="passwordInput">
+                    Enter the secret password
+                </label>
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="••••••"
+                    maxlength="6"
+                    autocomplete="off"
+                >
+
+                <button id="loginButton">
+                    Open My Surprise 🌻
+                </button>
+
+                <p id="loginError" class="login-error">
+                    Hmm... that's not it. Try again. 💜
+                </p>
+
+            </div>
+
+
+            <!-- SONG PROMPT -->
+
+            <div id="songPrompt" class="song-prompt">
+
+                <div class="prompt-flower">
+                    🌻
+                </div>
+
+                <h2>
+                    Before you come in...
+                </h2>
+
+                <p>
+                    There's one little thing
+                    I'd like you to do first.
+                </p>
+
+                <p class="prompt-main">
+                    Put on our song. 🎵
+                </p>
+
+                <p>
+                    Then come inside and see
+                    what I made for you.
+                </p>
+
+                <button
+                    id="playEntranceSong"
+                    class="entrance-song-button">
+                    ▶ Play "Beautiful Things"
+                </button>
+
+                <p
+                    id="entranceSongStatus"
+                    class="entrance-song-status">
+                </p>
+
+                <button
+                    id="enterWebsiteButton"
+                    class="enter-website-button"
+                    disabled>
+                    Enter My Surprise 🌻
+                </button>
+
+            </div>
+
+            <p class="login-hint">
+                💜 A little number that's special to us
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="mainSite" class="hidden">
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="floating-flower flower-a">🌻</div>
+            <div class="floating-flower flower-b">🌻</div>
+            <div class="floating-flower flower-c">🌻</div>
+            <div class="floating-flower flower-d">🌻</div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    A LITTLE BIRTHDAY SURPRISE
+                </p>
+
+                <h1>
+                    Happy 18th Birthday,<br>
+                    <span>Angela</span> 🌻
+                </h1>
+
+                <p class="hero-text">
+                    To the girl who makes ordinary days
+                    feel a little more beautiful.
+                </p>
+
+                <div class="date-badge">
+                    🎂 Your Special Day
+                </div>
+
+                <a
+                    href="#birthday"
+                    class="hero-button">
+                    Begin Your Surprise ↓
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BIRTHDAY MESSAGE
+        ====================================== -->
+
+        <section
+            id="birthday"
+            class="section birthday-section">
+
+            <div class="section-container">
+
+                <div class="sunflower-icon">
+                    🌻
+                </div>
+
+                <p class="section-label">
+                    FOR YOU
+                </p>
+
+                <h2>
+                    Eighteen looks beautiful on you.
+                </h2>
+
+                <p class="section-text">
+
+                    Today isn't just another birthday.
+
+                    It's the beginning of another chapter
+                    of your life, and I'm so happy that
+                    I get to be here to celebrate it with you.
+
+                    <br><br>
+
+                    I hope your 18th year brings you
+                    countless reasons to smile,
+                    dreams that slowly become reality,
+                    and memories that you'll treasure
+                    for years to come.
+
+                    <br><br>
+
+                    And selfishly...
+
+                    I hope I get to be part of
+                    many of those memories. 💜
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MEMORY CAROUSEL
+        ====================================== -->
+
+        <section
+            id="memories"
+            class="section memories-section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    OUR MEMORIES
+                </p>
+
+                <h2>
+                    Little Pieces of Us 🌻
+                </h2>
+
+                <p class="section-intro">
+                    Every picture holds a memory
+                    I never want to forget.
+                </p>
+
+
+                <div class="carousel-wrapper">
+
+                    <button
+                        class="carousel-button left"
+                        id="prevButton"
+                        aria-label="Previous memory">
+                        ‹
+                    </button>
+
+
+                    <div class="carousel">
+
+                        <div class="polaroid">
+
+                            <div class="photo-container">
+
+                                <img
+                                    id="carouselImage"
+                                    src="images/photo01.jpg"
+                                    alt="Our memory"
+                                >
+
+                                <div class="photo-overlay">
+                                    Click to enlarge
+                                </div>
+
+                            </div>
+
+                            <div class="polaroid-caption">
+
+                                <p
+                                    id="memoryDate"
+                                    class="memory-date">
+                                    December 2025
+                                </p>
+
+                                <h3 id="memoryTitle">
+                                    The Beginning
+                                </h3>
+
+                                <p id="memoryCaption">
+                                    The beginning of
+                                    something beautiful. 💜
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="carousel-button right"
+                        id="nextButton"
+                        aria-label="Next memory">
+                        ›
+                    </button>
+
+                </div>
+
+
+                <div class="carousel-bottom">
+
+                    <div
+                        id="carouselDots"
+                        class="carousel-dots">
+                    </div>
+
+                    <p id="carouselCounter">
+                        1 / 24
+                    </p>
+
+                </div>
+
+                <p class="swipe-hint">
+                    ← Swipe or use the arrows →
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             RELATIONSHIP COUNTER
+        ====================================== -->
+
+        <section class="section counter-section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    SINCE DECEMBER 25, 2025
+                </p>
+
+                <h2>
+                    Time With You 💜
+                </h2>
+
+                <div class="counter-grid">
+
+                    <div class="counter-card">
+                        <span id="days">0</span>
+                        <small>Days</small>
+                    </div>
+
+                    <div class="counter-card">
+                        <span id="hours">0</span>
+                        <small>Hours</small>
+                    </div>
+
+                    <div class="counter-card">
+                        <span id="minutes">0</span>
+                        <small>Minutes</small>
+                    </div>
+
+                    <div class="counter-card">
+                        <span id="seconds">0</span>
+                        <small>Seconds</small>
+                    </div>
+
+                </div>
+
+                <p class="counter-message">
+                    And I'd choose every one of those
+                    moments again. 🌻
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             18 THINGS
+        ====================================== -->
+
+        <section class="section things-section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    FOR YOUR 18TH
+                </p>
+
+                <h2>
+                    18 Little Things I Love About You
+                </h2>
+
+                <div class="things-grid">
+
+                    <div class="thing">
+                        <span>01</span>
+                        <p>Your smile</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>02</span>
+                        <p>Your laugh</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>03</span>
+                        <p>The way you care</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>04</span>
+                        <p>Your kindness</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>05</span>
+                        <p>Your little expressions</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>06</span>
+                        <p>The way you make me laugh</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>07</span>
+                        <p>Your patience</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>08</span>
+                        <p>Your beautiful heart</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>09</span>
+                        <p>Our random conversations</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>10</span>
+                        <p>The memories we make</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>11</span>
+                        <p>Your adorable moments</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>12</span>
+                        <p>The way you brighten my day</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>13</span>
+                        <p>Your strength</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>14</span>
+                        <p>Your dreams</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>15</span>
+                        <p>How comfortable I am with you</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>16</span>
+                        <p>How you make life sweeter</p>
+                    </div>
+
+                    <div class="thing">
+                        <span>17</span>
+                        <p>Simply being you</p>
+                    </div>
+
+                    <div class="thing special">
+                        <span>18</span>
+                        <p>Because you're Angela. 💜</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             OUR SONG
+        ====================================== -->
+
+        <section class="section song-section">
+
+            <div class="section-container">
+
+                <div class="vinyl" id="vinyl">
+                    🎵
+                </div>
+
+                <p class="section-label">
+                    OUR SONG
+                </p>
+
+                <h2>
+                    Beautiful Things
+                </h2>
+
+                <p class="song-description">
+                    Some songs sound different when you have
+                    someone special to associate them with.
+                </p>
+
+                <button
+                    id="musicButton"
+                    class="music-button">
+                    ▶ Play Our Song
+                </button>
+
+                <p
+                    id="musicStatus"
+                    class="music-status">
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             LOVE LETTER
+        ====================================== -->
+
+        <section class="section letter-section">
+
+            <div class="letter">
+
+                <div class="letter-flower">
+                    🌻
+                </div>
+
+                <p class="section-label">
+                    A LETTER FOR YOU
+                </p>
+
+                <h2>
+                    Dear Angela,
+                </h2>
+
+                <div class="letter-text">
+
+                    <p>
+                        I don't know what the future has
+                        waiting for us, but I know I'm grateful
+                        that I get to experience a part of it
+                        with you.
+                    </p>
+
+                    <p>
+                        Since December 25, 2025, you've become
+                        part of so many of my favorite memories—
+                        the big moments, the little moments,
+                        the silly moments, and even the ordinary
+                        days that somehow feel special just
+                        because you're there.
+                    </p>
+
+                    <p>
+                        I made this little corner of the internet
+                        because I never want to forget how
+                        beautiful our story has been so far.
+                    </p>
+
+                    <p>
+                        Every picture here is more than just
+                        a picture. They're pieces of our time
+                        together—moments I got lucky enough
+                        to share with you.
+                    </p>
+
+                    <p>
+                        Thank you for being you.
+                        Thank you for the laughs, the memories,
+                        the patience, the adventures, and all
+                        the little things you probably don't
+                        even realize I appreciate.
+                    </p>
+
+                    <p>
+                        You are one of the beautiful things
+                        in my life that I never want to
+                        take for granted.
+                    </p>
+
+                    <p>
+                        And now that you're officially 18,
+                        I hope you know how proud I am of the
+                        person you are becoming.
+                    </p>
+
+                    <p>
+                        Here's to all the memories we've already
+                        made, and to all the ones we haven't
+                        made yet.
+                    </p>
+
+                    <p class="love-ending">
+                        I love you, Angela. ❤️
+                    </p>
+
+                </div>
+
+                <p class="signature">
+                    — Micko
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FINAL SURPRISE
+        ====================================== -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="giant-flower">
+                    🌻
+                </div>
+
+                <p class="final-eyebrow">
+                    ONE LAST THING...
+                </p>
+
+                <h2>
+                    Happy 18th Birthday,
+                    Angela! 💜
+                </h2>
+
+                <p>
+                    May this new chapter of your life
+                    be filled with beautiful things,
+                    wonderful memories, big dreams,
+                    and lots of love.
+                </p>
+
+                <div class="final-divider">
+                    ✦ 🌻 ✦
+                </div>
+
+                <p class="final-love">
+                    I love you.
+                </p>
+
+                <p class="final-signature">
+                    — Micko
+                </p>
+
+                <div class="final-date">
+                    December 25, 2025 — Forever 🌻
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         PHOTO MODAL
+    ========================================== -->
+
+    <div
+        id="photoModal"
+        class="photo-modal">
+
+        <button
+            id="closeModal"
+            class="close-modal"
+            aria-label="Close photo">
+            ×
+        </button>
+
+        <img
+            id="modalImage"
+            src=""
+            alt="Enlarged memory"
+        >
+
+    </div>
+
+
+    <!-- =========================================
+         FLOATING MUSIC BUTTON
+    ========================================== -->
+
+    <button
+        id="floatingMusicButton"
+        class="floating-music"
+        aria-label="Play music">
+        🎵
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
