@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Micko ♡ Angela</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+    <div id="hearts"></div>
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="music/beautiful-things.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" id="musicButton">
+        🎵 <span id="musicText">Play our song</span>
+    </button>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="small-heart">♡</div>
+
+            <p class="eyebrow">A little place on the internet for</p>
+
+            <h1>Micko <span>♡</span> Angela</h1>
+
+            <p class="since">
+                Together since <strong>December 25, 2025</strong>
+            </p>
+
+            <p class="hero-message">
+                Every picture has a story.<br>
+                These are ours.
+            </p>
+
+            <button class="main-button" onclick="scrollToSection('story')">
+                ✨ Open Our Story
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+            ↓ scroll down ↓
+        </div>
+
+    </section>
+
+
+    <!-- OUR STORY -->
+    <section class="section" id="story">
+
+        <div class="section-heading">
+            <span>🌷</span>
+            <h2>Our Little Story</h2>
+            <p>Two people, countless memories.</p>
+        </div>
+
+        <div class="story-card">
+
+            <div class="story-date">
+                December 25, 2025
+            </div>
+
+            <h3>The Beginning</h3>
+
+            <p>
+                Somewhere between ordinary days and unexpected moments,
+                our story began.
+            </p>
+
+            <p>
+                December 25, 2025 wasn't just Christmas anymore.
+                It became the day that gave us an "us."
+            </p>
+
+            <div class="story-heart">♡</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEMORY GALLERY -->
+    <section class="section gallery-section" id="memories">
+
+        <div class="section-heading">
+            <span>📸</span>
+            <h2>Our Memories</h2>
+            <p>A collection of little moments that mean a lot.</p>
+        </div>
+
+        <div class="gallery" id="gallery">
+
+            <!--
+                ==================================================
+                ADD YOUR PHOTOS HERE
+                ==================================================
+
+                Replace the filenames with your actual photos.
+
+                Example:
+
+                <div class="memory-card">
+                    <img src="images/photo01.jpg" alt="Our memory">
+                    <div class="memory-info">
+                        <span>December 25, 2025</span>
+                        <h3>The beginning ❤️</h3>
+                        <p>The day everything started.</p>
+                    </div>
+                </div>
+
+            -->
+
+            <div class="memory-card">
+                <img src="images/photo01.jpg" alt="Our memory">
+                <div class="memory-info">
+                    <span>December 25, 2025</span>
+                    <h3>The Beginning ❤️</h3>
+                    <p>The day our story officially began.</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo02.jpg" alt="Our memory">
+                <div class="memory-info">
+                    <span>A beautiful day</span>
+                    <h3>Just Us 🌸</h3>
+                    <p>One of those little moments I never want to forget.</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo03.jpg" alt="Our memory">
+                <div class="memory-info">
+                    <span>One of my favorites</span>
+                    <h3>Us Being Us ✨</h3>
+                    <p>Sometimes the simplest moments become the best memories.</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo04.jpg" alt="Our memory">
+                <div class="memory-info">
+                    <span>Another memory</span>
+                    <h3>With You 💕</h3>
+                    <p>Everything feels a little better when you're around.</p>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <img src="images/photo05.jpg" alt="Our memory">
+                <div class="memory-info">
+                    <span>And many more...</span>
+                    <h3>Our Little World 🌷</h3>
+                    <p>Here's to all the memories we haven't made yet.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TIME TOGETHER -->
+    <section class="counter-section">
+
+        <div class="section-heading light">
+            <span>⏰</span>
+            <h2>How Long We've Been Us</h2>
+            <p>And hopefully, counting for a very long time.</p>
+        </div>
+
+        <div class="counter">
+
+            <div class="counter-box">
+                <strong id="days">0</strong>
+                <span>Days</span>
+            </div>
+
+            <div class="counter-box">
+                <strong id="hours">0</strong>
+                <span>Hours</span>
+            </div>
+
+            <div class="counter-box">
+                <strong id="minutes">0</strong>
+                <span>Minutes</span>
+            </div>
+
+            <div class="counter-box">
+                <strong id="seconds">0</strong>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LITTLE THINGS -->
+    <section class="section">
+
+        <div class="section-heading">
+            <span>🌸</span>
+            <h2>The Little Things</h2>
+            <p>Because love isn't always about the big moments.</p>
+        </div>
+
+        <div class="things">
+
+            <div class="thing">
+                <div>😂</div>
+                <h3>The Laughs</h3>
+                <p>The random jokes and moments that make absolutely no sense to anyone else.</p>
+            </div>
+
+            <div class="thing">
+                <div>🫶</div>
+                <h3>The Comfort</h3>
+                <p>Being able to simply be ourselves around each other.</p>
+            </div>
+
+            <div class="thing">
+                <div>📸</div>
+                <h3>The Memories</h3>
+                <p>The pictures we'll probably look back on years from now.</p>
+            </div>
+
+            <div class="thing">
+                <div>🌷</div>
+                <h3>The Ordinary Days</h3>
+                <p>The days that aren't special on paper, but somehow become special because they're ours.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SONG -->
+    <section class="song-section">
+
+        <div class="song-card">
+
+            <div class="vinyl">
+                ♪
+            </div>
+
+            <div>
+                <p>OUR SONG</p>
+                <h2>Beautiful Things</h2>
+                <span>For the beautiful things in life that I never want to take for granted.</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOVE LETTER -->
+    <section class="letter-section">
+
+        <div class="envelope" id="envelope">
+
+            <div class="letter">
+
+                <p class="letter-to">For Angela,</p>
+
+                <p>
+                    I don't know what the future has waiting for us,
+                    but I know I'm grateful that I get to experience
+                    a part of it with you.
+                </p>
+
+                <p>
+                    Since December 25, 2025, you've become part of so
+                    many of my favorite memories—the big moments,
+                    the little moments, the silly moments, and even
+                    the ordinary days that somehow feel special
+                    just because you're there.
+                </p>
+
+                <p>
+                    I made this little corner of the internet because
+                    I never want to forget how beautiful our story
+                    has been so far.
+                </p>
+
+                <p>
+                    Every picture here is more than just a picture.
+                    They're pieces of our time together—moments I got
+                    lucky enough to share with you.
+                </p>
+
+                <p>
+                    Thank you for being you. Thank you for the laughs,
+                    the memories, the patience, the adventures, and
+                    all the little things you probably don't even
+                    realize I appreciate.
+                </p>
+
+                <p class="special-line">
+                    You are one of the beautiful things in my life
+                    that I never want to take for granted.
+                </p>
+
+                <p>
+                    Here's to all the memories we've already made,
+                    and to all the ones we haven't made yet.
+                </p>
+
+                <p class="love-you">
+                    I love you, Angela. ❤️
+                </p>
+
+                <p class="signature">
+                    — Micko
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final-section">
+
+        <div class="final-content">
+
+            <div class="big-heart">♡</div>
+
+            <h2>Here's to us.</h2>
+
+            <p>
+                To more adventures.<br>
+                More laughs.<br>
+                More pictures.<br>
+                More ordinary days that become beautiful memories.
+            </p>
+
+            <h3>
+                If I could choose again,<br>
+                I'd still choose you.
+            </h3>
+
+            <div class="forever">
+                Micko ♡ Angela
+            </div>
+
+            <small>
+                Est. December 25, 2025
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO MODAL -->
+    <div class="modal" id="modal">
+
+        <button class="close-modal" id="closeModal">×</button>
+
+        <img id="modalImage" src="" alt="Memory">
+
+        <div id="modalCaption"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
